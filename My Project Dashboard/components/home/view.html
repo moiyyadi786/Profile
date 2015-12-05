@@ -1,7 +1,35 @@
-<div data-role="view" data-title="Home View" data-layout="main" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
-
-    <!-- START_CUSTOM_CODE_home -->
-    <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
-
-    <!-- END_CUSTOM_CODE_home -->
+<div data-role="view" data-title="Home View" data-layout="main-nonav" data-model="app.home" data-show="app.home.onShow" data-after-show="app.home.afterShow">
+        <div id="example">
+            <span id="notification"></span>
+                <ul id="panelbar">
+                <li class="k-state-active">
+                    <span class="k-link k-state-selected">
+                        <h3>Fantastic Four</h3></span>
+                    <div style="padding: 10px;">
+                        <div class="teamMate" data-name="Somesh">
+                            <img src="http://photos4.meetupstatic.com/photos/member/a/c/9/6/member_102344182.jpeg" alt="Somesh" height="50px" width="40px">
+                            <h2>Somesh Mukherjee</h2>
+                            <p>Project Manager</p>
+                        </div>
+                        <div class="teamMate" data-name="Sampath">
+                            <img src="https://lh3.googleusercontent.com/-JLmjJ5h-rBo/AAAAAAAAAAI/AAAAAAAAAFw/D4t6-uHPIhE/s120-c/photo.jpg" alt="Somesh" height="50px" width="40px">
+                            <h2>Sampath Heragu</h2>
+                            <p>Project Manager</p>
+                        </div>
+                        <div class="teamMate" data-name="Indu">
+                        <img src="https://pbs.twimg.com/profile_images/1525290059/Rani__Indu_-_SSO__501957291.JPG"
+                         height="50px" width="40px"
+                         alt="Indu"/>
+                            <h2>Indu Porwal</h2>
+                            <p>Developer</p>
+                        </div>
+                        <div class="teamMate" data-name="Akash">
+                            <img src="https://lh3.googleusercontent.com/-jto5voDIeuE/UvZ0bU0-GlI/AAAAAAAAB4Y/pMjbAwbO3Jo/w820-h818-no/photo%25286%2529.JPG" alt="Akash" height="50px" width="40px">
+                            <h2>Akash Palewar</h2>
+                            <p>Developer</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div id="notify" class="demo-section k-content"></div>
 </div>
