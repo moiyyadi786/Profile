@@ -4,7 +4,43 @@
     var app = {
         data: {}
     };
-
+    //var template = kendo.template($("#template").html()); //create template
+    app.dataSource = new kendo.data.DataSource({
+      data: [
+        { 
+         id: 0, 
+         name: "Somesh Mukhejee",
+         firstName: "Somesh",
+         designation: "Project Manager",
+         img: "http://photos4.meetupstatic.com/photos/member/a/c/9/6/member_102344182.jpeg", 
+         description: "Somesh is Project Manager in IEEE with expertise in executing web and mobile development" 
+        },
+        { 
+         id: 1,
+         name: "Sampath Heragu",
+         firstName: "Sampath",
+         designation: "Project Manager",
+         img: "https://lh3.googleusercontent.com/-JLmjJ5h-rBo/AAAAAAAAAAI/AAAAAAAAAFw/D4t6-uHPIhE/s120-c/photo.jpg", 
+         description: "Sampath is Senior Project Manager in IEEE and is Scrum Master of many development projects" 
+        },
+        { 
+         id: 2,
+         name: "Indu Porwal",
+         firstName: "Indu",
+         designation: "Senior Developer",
+         img: "https://pbs.twimg.com/profile_images/1525290059/Rani__Indu_-_SSO__501957291.JPG", 
+         description: "Indu is Senior Web Developer working primarily on Java/J2EE" 
+        },
+        { 
+         id: 3,
+         name: "Akash Palewar",
+         firstName: "Akash",
+         designation: "Senior Developer",
+         img: "https://lh3.googleusercontent.com/-jto5voDIeuE/UvZ0bU0-GlI/AAAAAAAAB4Y/pMjbAwbO3Jo/w820-h818-no/photo%25286%2529.JPG", 
+         description: "Akash is Senior Web Developer working primarily on Java/J2EE" 
+        },
+      ]
+    });
     var bootstrap = function() {
         $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
